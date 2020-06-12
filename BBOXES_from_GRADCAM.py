@@ -72,7 +72,7 @@ class BBoxerwGradCAM():
     def form_bboxes(self):
         grey_img = cv2.cvtColor(self.smooth_heatmap, cv2.COLOR_BGR2GRAY)
         ret,thresh = cv2.threshold(grey_img,127,255,cv2.THRESH_BINARY)
-        im2,contours,hierarchy = cv2.findContours(thresh, 1, 2)
+        contours,hierarchy = cv2.findContours(thresh, 1, 2)
 
         for item in range(len(contours)):
             cnt = contours[item]
