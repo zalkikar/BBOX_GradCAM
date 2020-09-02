@@ -13,3 +13,7 @@ This class takes 5 user inputs:
 * Image Resizing Scale (also applied to corresponding GradCAM heatmap)
 * BBOX Rectangle Resizing Scale
 * Class is compatible with google colab and other Python 3 enivronments
+
+### update
+Weights for Grad-CAM are formed in the final convolutional layer, can a seperate model can be introduced on the Grad-CAM heatmap, or possibly leverage the contouring and gradient strategies used here, to increase IoU after Grad-CAM or CHIP (Channel-wise Disentangled Interpretation of Deep Convolutional Neural Networks)?
+Relevant Paper: [https://arxiv.org/pdf/1902.02497.pdf](https://arxiv.org/pdf/1902.02497.pdf)
